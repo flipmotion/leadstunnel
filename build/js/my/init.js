@@ -1,26 +1,58 @@
 $(document).ready(function() {
 	$('a.smooth').click(function(){
 		$('html, body').animate({
-			scrollTop: $( $.attr(this, 'href') ).offset().top -100
+			scrollTop: $( $.attr(this, 'href') ).offset().top
 		}, 500);
 		return false;
+	});
+	$('[data-item="disable-slider"]').click(function(){
+		$('.turn-on').toggleClass('active');
+		$('.turn-off').toggleClass('active');
+		$(this).toggleClass('active');
+	});
+	var owlMain = $('[data-item="slider-item"]');
+	owlMain.owlCarousel({
+		loop:true,
+		margin:0,
+		nav:true,
+		dots:true,
+		items:1,
+		autoplayHoverPause: true,
+		autoplayTimeout: 5000,
+		autoplay:true,
+		navText: [
+		  "<i class='my-arrow-left'></i>",
+		  "<i class='my-arrow-right'></i>"
+      ],
+		dots: true,
 	});
 	$('[data-mask="phone"]').mask("+7 (999) 999-99-99");
 	
 	$('[data-form="send"]').ajaxForm(function() {
 		$('#call').modal('hide');
 		$('#thx').modal('show');
-	}); 
-	$('.timer').countdown({
-		//date: +(new Date) + 86400000 * 10,
-		date: "June 7, 2087 12:55:00",
-		render: function(data) {
-			$(this.el).html("<div class='hours'>" + this.leadingZeros(data.hours, 2) + " </div><div class='mins '>" + this.leadingZeros(data.min, 2) + " </div><div class='secs'>" + this.leadingZeros(data.sec, 2) + " </div>");
-		},
-		onEnd: function() {
-			this.update(+(new Date) + 86400000 * 10);
-			this.start();
-		}
+	});
+	
+	$('.block-5 a').click(function(e){
+		e.preventDefault();
+		var that = $(this).attr('data-choice');
+		$('.block-5 a').removeClass('active');
+		$('.block-6 .container').removeClass('active');
+		$(this).addClass('active');
+		$("#"+that).addClass('active');
+		
+	});
+	var title = $('.block-1 .offset');
+	var win = $(window).height() / 2;
+	title.css('margin-top', win);
+	
+	$(window).scroll(function () {
+		var scroll_r = $(this).scrollTop();
+		var parallaxDown = $('body .block-1 .holder-img');
+		var options = ((((jQuery(window).height() - scroll_r) - jQuery(window).height()) / 1000) + 1) < 0.3 ? 0.3 : ((((jQuery(window).height() - scroll_r) - jQuery(window).height()) / 1000) + 1);
+		parallaxDown.css('bottom', options);
+		
+		
 	});
 });
 

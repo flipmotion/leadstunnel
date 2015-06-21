@@ -1,75 +1,57 @@
 .footer {
-	padding: 10px 0;
-	background: #DCDCDC;
-	.logo {
-		display: table;
-		width: 100%;
-		img {
-			width: 65px;
-		}
-		& > div {
-			vertical-align: middle;
-			&:nth-child(1) {
-				padding-right: 20px;
-			}
-			display: table-cell;
-			p:nth-child(1) {
-				.PFB;
-				font-size: 37px;
-				color: #000;
-				line-height: 30px;
-				margin: 0;
-			}
-			p:nth-child(2) {
-				margin: 0;
-				line-height: 24px;
-				.PFL;
-				font-size: 24px;
-				color: #000;
-			}
-		}
+	background: #2a2a2a;
+	&-lvl-1 {
+		padding: 30px 0 20px;
 	}
-	.address {
-		display: table;
-		width: 100%;
-		padding-top: 15px;
-		img {
-			width: 53px;
-		}
-		& > div {
-			vertical-align: middle;
-			&:nth-child(1) {
-				padding-right: 0px;
-			}
-			display: table-cell;
-			p {
-				margin: 0;
-				line-height: 18px;
-				.PFL;
-				font-size: 16px;
-				color: #000;
-			}
-		}
-	}
-	.call-block {
-		text-align: right;
+	&-lvl-2 {
+		padding: 20px 0 20px;
+		border-top: 1px solid #404040;
 		p {
-			.PFR;
-			font-size: 27px;
-			margin: 0;
-			
+			color: rgba(255,255,255,.7);
+			margin-bottom: 0;
+			.MST;
 		}
-		.btn {
-			font-size: 21px;
-			margin-top: -3px;
-			.PFL;
+		a {
+			color: rgba(255,255,255,.7);
+			.MST;
+		}
+	}
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		li {
+			margin: 10px 0;
+		}
+		p {
 			color: #fff;
-			&-success {
-				background: #27AE60;
-				padding: 4px 30px;
-				border-radius: 10px;
-				border-color: transparent;
+			.MSB;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+		}
+		a {
+			color: #fff;
+			.MST;
+		}
+	}
+	.logo {
+	}
+	.contacts {
+		a {
+			color: #fff;
+			&:hover,&:focus {
+				color: #fff;
+				text-decoration: none;
 			}
+		}
+		p {
+			color: #fff;
+			.MSL;
+		}
+		p:nth-child(1) {
+			font-size: 18px;
+			.MSB;
+			margin-top: 60px;
 		}
 	}
 }

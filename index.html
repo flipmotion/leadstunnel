@@ -16,433 +16,959 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 </head>
-<body>
+<body data-spy="scroll" data-target="#menu">
 	<div class="sticky-page">
-		<section class="header">
+		
+		<section class="header navbar-fixed-top">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12 col-md-5 col-sm-5">
+					<div class="col-xs-12 col-md-2 col-sm-3">
 						<div class="logo">
-							<div><img src="assets/img/p1-2.png"></div>
-							<div>
-								<p>Tornado box</p>
-								<p>Школа бокса №1 в Москве</p>
-							</div>
+							<a class="smooth" href="#block1"><img src="assets/img/logo.png"></a>
 						</div>
 					</div>
-					<div class="col-xs-12 col-md-4 col-sm-4">
-						<div class="address">
-							<div>
-								<img src="assets/img/yandexmaps-349-l-124x124.png">
-							</div>
-							<div>
-								<p>
-									Москва,
-								</p>
-								<p>
-									ул. 1-я, Мытищинская д. 23
-								</p>
-								<p>
-									м. Алексеевская
-								</p>
-							</div>
-						</div>
+					<div class="col-xs-12 col-md-8 col-sm-6">
+						<nav class="navbar navbar-default">
+							<div class="">
+								<!-- Brand and toggle get grouped for better mobile display -->
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+
+								<!-- Collect the nav links, forms, and other content for toggling -->
+								<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+									<div data-spy="scroll" id="menu">
+										<ul class="nav navbar-nav">
+											<li>
+												<div class="circle"></div>
+												<a class="smooth" href="#block1">Leadstunnel</a>
+											</li>
+											
+											<li class="active">
+												<div class="circle"></div>
+												<a class="smooth" href="#block2">Как это работает</a>
+											</li>
+											
+											<li>
+												<div class="circle"></div>
+												<a class="smooth" href="#block3">Возможности</a>
+											</li>
+												
+											<li>
+												<div class="circle"></div>
+												<a class="smooth" href="#block4">Тарифы</a>
+											</li>
+												
+											<li>
+												<div class="circle"></div>
+												<a class="smooth" href="#block5">Отзывы</a>
+											</li>
+										</ul>
+									</div><!-- /.navbar-collapse -->
+								</div><!-- /.navbar-collapse -->
+							</div><!-- /.container-fluid -->
+						</nav>
 					</div>
-					<div class="col-xs-12 col-md-3 col-sm-3">
-						<div class="call-block">
-							<p>8 (499) 649-58-67</p>
-							<a href="#" class="btn btn-success" data-target="#call" data-toggle="modal">Обратный звонок</a>
+					<div class="col-xs-12 col-md-2 col-sm-3">
+						<div class="text-right">
+							<a href="#" class="btn btn-danger">Начать работу</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 		
+		<section class="content block-1" id="block1">
+			<div class="container">
+				<div class="offset">
+					<div class="row">
+					<div class="col-xs-12 col-md-10 col-sm-10 col-sm-offset-1 col-md-offset-1">
+						<h1 class="text-center title-main">
+							Быстрое подключение CRM к вашему сайту
+						</h1>
+					</div>
+				</div>
+					<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<form class="form-send" data-toggle="validator" action="hendler.php" method="post" role="form" data-form="send">
+							<div class="form-group">
+								<div class="row">
+									<div class="col-xs-12 col-md-8 col-sm-8 col-sm-offset-2 col-md-offset-2">
+										<div class="input-group">
+											<input type="text" name="user" class="form-control my-input user" placeholder="Введите ваше имя" required/>
+											<span class="input-group-btn">
+												<button type="submit" class="btn btn-danger my-btn-second" value="block-1" name="from">Оставить заявку</button>
+											</span>
+										</div>
+									</div>
+									<div class="col-xs-12">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="row">
+									<div class="col-xs-12">
+										<p class="subtitle text-center">
+											Первые два месяца в подарок!
+										</p>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<div class="holder-img text-center">
+							<img src="assets/img/holder-1.png" draggable="false">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		
-		<section class="content block-1">
+		<section class="content block-2" id="block2">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-md-12 col-sm-12">
-						<h1 class="text-center text-uppercase">
-							ТРЕНИРОВКИ ПО БОКСУ
-						</h1>
-						<h4 class="text-center">с многократным чемпионом России и Европы</h4>
+						<h2 class="text-center my-title-main-2">
+							Автоматизация процесса приема заявок с сайта
+						</h2>
+						
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-xs-12 col-md-6 col-sm-6 col-md-offset-6 col-sm-offset-6">
-						<div class="form-bordered">
-							<p class="text-uppercase">
-								ОСТАВЬТЕ ЗАЯВКУ
-							</p>
-							<p >на <i>бесплатную</i> тренировку прямо сейчас</p>
-							<a href="#this" class="btn btn-success text-uppercase smooth">Записаться</a>
-						</div>
+					<div class="col-xs-12 col-md-8 col-sm-8 col-sm-offset-2 col-md-offset-2">
+						<p class="subitle text-center">
+							С LeadTunnel передача заявок будет оптимальнее и 
+							обновленные CRM, Телефония, Задачи, Диск,Мобильное приложение 
+							и совершенно новый подход к организации бизнес-процессов. 
+						</p>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-xs-12 col-md-12 col-sm-12">
 						<div class="holder">
-							<p class="text-center">
-								Наши тренировки по боксу - это индивидуальный подход к 
-каждому человеку, дружеская атмосфера и работа на результат!
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="content block-2">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-md-12 col-sm-12">
-						<h2 class="text-center text-uppercase text-red">
-							АКЦИЯ!
-						</h2>
-						<h3 class="text-center text-uppercase text-red">
-							РАСПРОДАЖА АБОНЕМЕНТОВ!
-						</h3>
-						<p class="text-center subtitle">
-							Запишись на тренировки по специальной цене:
-						</p>
-					</div>
-					<div class="col-xs-12 col-md-12 col-sm-12">
-						<p class="text-center text-bordered">
-							Абонемент на 3 месяца всего за <strike>500р</strike> <strong>250р</strong> за тренировку!
-						</p>
-					</div>
-					<div class="col-xs-12 col-md-12 col-sm-12">
-						<p class="text-center text-bordered">
-							Абонемент на 3 месяца всего за <strike>500р</strike>  <strong>250р</strong>  за тренировку!
-						</p>
-					</div>
-					<div class="col-xs-12 col-md-12 col-sm-12">
-						<p class="text-center text-bordered">
-							Абонемент на 3 месяца всего за <strike>500р</strike>  <strong>250р</strong>  за тренировку!
-						</p>
-					</div>
-					<div class="col-xs-12 col-md-12 col-sm-12">
-						<p class="text-center text-title-timer">
-							Спешите записаться - количество мест ограничено!
-						</p>
-					</div>
-					<div class="col-xs-12 col-md-12 col-sm-12">
-						<p class="text-center title-danger">
-							до конца акции:
-						</p>
-					</div>
-					<div class="col-xs-12 col-md-12 col-sm-12">
-						<div class="timer">
-						</div>
-					</div>
-					<div class="col-xs-12 col-md-12 col-sm-12">
-						<p class="text-center call-title">
-							Звоните прямо сейчас 
-						</p>
-					</div>
-					<div class="col-xs-12 col-md-12 col-sm-12">
-						<p class="text-center phone">
-							8 (499) 649-58-67 
-						</p>
-					</div>
-					<div class="col-xs-12 col-md-12 col-sm-12">
-						<p class="text-center phone-subtitle">
-							или оставьте заявку и мы вам перезвоним
-						</p>
-					</div>
-					<div class="col-xs-12 col-md-12 col-sm-12">
-						<div class="text-center">
-							<a href="#this" class="btn btn-success smooth">Записаться</a>
+							<img src="assets/img/mac-1.png">
+							<video width="100%" height="100%" controls>
+								<source src="movie.mp4" type="video/mp4">
+								<source src="movie.ogg" type="video/ogg">
+								Your browser does not support the video tag.
+							</video>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 		
-		<section class="content block-3">
+		<section class="content block-3" id="block3">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-md-12 col-sm-12">
-						<h2 class="text-center text-uppercase">
-							У НАС ВЫ ПОЛУЧАЕТЕ
+						<h2 class="text-center my-title-main-2">
+							Возможности
 						</h2>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-xs-12 col-md-12 col-sm-12">
-						<h3 class="text-center text-bordered-red">
-							<img src="assets/img/25.png">
-							Первую тренировку бесплатно
-						</h3>
-					</div>
-				</div>
-				<div class="row text-center">
-					<div class="col-xs-12 col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
-						<div class="row">
-							<div class="col-xs-12 col-md-4 col-sm-4">
+				<div class="turn-on active">
+					<div class="row">
+						<div class="col-xs-12 col-md-12 col-sm-12">
+							<div class="" data-item="slider-item">
 								<div class="item">
-									<div class="img img-1"><img src="assets/img/15.jpg"></div>
-									<p>
-										Работа в боксерском ринге
-									</p>
+									<div class="row">
+										<div class="col-xs-12 col-md-4 col-sm-4">
+											<div class="my-item icon icon-1">
+												<h3>
+													Интеграция в 2 клика
+												</h3>
+												<hr />
+												<p>
+													Больше не нужно просить программистов делать ежедневные выгрузку или писать модули интеграции с CRM. Нужно всего лишь установить готовый скрипт на сайт.
+												</p>
+											</div>
+										</div>
+										<div class="col-xs-12 col-md-4 col-sm-4">
+											<div class="my-item icon icon-2">
+												<h3>
+													Интеграция в 2 клика
+												</h3>
+												<hr />
+												<p>
+													Больше не нужно просить программистов делать ежедневные выгрузку или писать модули интеграции с CRM. Нужно всего лишь установить готовый скрипт на сайт.
+												</p>
+											</div>
+										</div>
+										<div class="col-xs-12 col-md-4 col-sm-4">
+											<div class="my-item icon icon-3">
+												<h3>
+													Интеграция в 2 клика
+												</h3>
+												<hr />
+												<p>
+													Больше не нужно просить программистов делать ежедневные выгрузку или писать модули интеграции с CRM. Нужно всего лишь установить готовый скрипт на сайт.
+												</p>
+											</div>
+										</div>
+									</div>
 								</div>
-							</div>
-							<div class="col-xs-12 col-md-4 col-sm-4">
 								<div class="item">
-									<div class="img img-2"><img src="assets/img/156.png"></div>
-									<p>
-										Бесплатное составление 
-индивидуальной 
-программы тренировок
-									</p>
-								</div>
-							</div>
-							<div class="col-xs-12 col-md-4 col-sm-4">
-								<div class="item">
-									<div class="img img-3"><img src="assets/img/17.jpg"></div>
-									<p>
-										Тренажерный 
-зал
-									</p>
+									<div class="row">
+										<div class="col-xs-12 col-md-4 col-sm-4">
+											<div class="my-item icon icon-1">
+												<h3>
+													Интеграция в 2 клика
+												</h3>
+												<hr />
+												<p>
+													Больше не нужно просить программистов делать ежедневные выгрузку или писать модули интеграции с CRM. Нужно всего лишь установить готовый скрипт на сайт.
+												</p>
+											</div>
+										</div>
+										<div class="col-xs-12 col-md-4 col-sm-4">
+											<div class="my-item icon icon-2">
+												<h3>
+													Интеграция в 2 клика
+												</h3>
+												<hr />
+												<p>
+													Больше не нужно просить программистов делать ежедневные выгрузку или писать модули интеграции с CRM. Нужно всего лишь установить готовый скрипт на сайт.
+												</p>
+											</div>
+										</div>
+										<div class="col-xs-12 col-md-4 col-sm-4">
+											<div class="my-item icon icon-3">
+												<h3>
+													Интеграция в 2 клика
+												</h3>
+												<hr />
+												<p>
+													Больше не нужно просить программистов делать ежедневные выгрузку или писать модули интеграции с CRM. Нужно всего лишь установить готовый скрипт на сайт.
+												</p>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-xs-12 col-md-4 col-sm-4">
-								<div class="item">
-									<div class="img img-4"><img src="assets/img/18.jpg"></div>
-									<p>
-										Групповые 
-тренировки с тренером
-									</p>
-								</div>
-							</div>
-							<div class="col-xs-12 col-md-4 col-sm-4">
-								<div class="item">
-									<div class="img img-5"><img src="assets/img/13.jpg"></div>
-									<p>
-										Работа 
-на груше
-									</p>
-								</div>
-							</div>
-							<div class="col-xs-12 col-md-4 col-sm-4">
-								<div class="item">
-									<div class="img img-6"><img src="assets/img/shower_318-29552.jpg"></div>
-									<p>
-										Раздевалка, 
-душ и туалет
-									</p>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12 col-md-12 col-sm-12">
-						<div class="text-center">
-							<a href="#this" class="btn btn-success smooth">записаться</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="content block-4">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-md-12 col-sm-12">
-						<h2 class="text-center text-uppercase">
-							ДЛЯ КОГО НАШИ ТРЕНИРОВКИ?
-						</h2>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-xs-12 col-md-4 col-sm-4">
-						<div class="item text-center">
-							<img src="assets/img/3_npqEBsC.png">
-							<p>1</p>
-							<p>Если вы хотите 
-научиться защитить 
-себя и свою семью</p>
-						</div>
-					</div>
-					<div class="col-xs-12 col-md-4 col-sm-4">
-						<div class="item text-center">
-							<img src="assets/img/circle-15_wCsy9JD.png">
-							<p>2</p>
-							<p>Если вы хотите регулярно поддерживать свою физическую форму</p>
-						</div>
-					</div>
-					<div class="col-xs-12 col-md-4 col-sm-4">
-						<div class="item text-center">
-							<img src="assets/img/2_fR5egTb.png">
-							<p>3</p>
-							<p>Если вы хотите 
-иметь спортивное 
-и подтянутое тело</p>
+					<div class="col-xs-12 col-sm-12 col-md-12">
+						<div class="text-right show-all">
+							<div class="disable-slider" data-item="disable-slider"></div>
 						</div>
 					</div>
 				</div>
 				
+				<div class="turn-off">
+					<div class="row">
+						<div class="col-xs-12 col-md-4 col-sm-4">
+							<div class="my-item icon icon-1">
+								<h3>
+									Интеграция в 2 клика
+								</h3>
+								<hr />
+								<p>
+									Больше не нужно просить программистов делать ежедневные выгрузку или писать модули интеграции с CRM. Нужно всего лишь установить готовый скрипт на сайт.
+								</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-4 col-sm-4">
+							<div class="my-item icon icon-2">
+								<h3>
+									Интеграция в 2 клика
+								</h3>
+								<hr />
+								<p>
+									Больше не нужно просить программистов делать ежедневные выгрузку или писать модули интеграции с CRM. Нужно всего лишь установить готовый скрипт на сайт.
+								</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-4 col-sm-4">
+							<div class="my-item icon icon-3">
+								<h3>
+									Интеграция в 2 клика
+								</h3>
+								<hr />
+								<p>
+									Больше не нужно просить программистов делать ежедневные выгрузку или писать модули интеграции с CRM. Нужно всего лишь установить готовый скрипт на сайт.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-md-4 col-sm-4">
+							<div class="my-item icon icon-1">
+								<h3>
+									Интеграция в 2 клика
+								</h3>
+								<hr />
+								<p>
+									Больше не нужно просить программистов делать ежедневные выгрузку или писать модули интеграции с CRM. Нужно всего лишь установить готовый скрипт на сайт.
+								</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-4 col-sm-4">
+							<div class="my-item icon icon-2">
+								<h3>
+									Интеграция в 2 клика
+								</h3>
+								<hr />
+								<p>
+									Больше не нужно просить программистов делать ежедневные выгрузку или писать модули интеграции с CRM. Нужно всего лишь установить готовый скрипт на сайт.
+								</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-4 col-sm-4">
+							<div class="my-item icon icon-3">
+								<h3>
+									Интеграция в 2 клика
+								</h3>
+								<hr />
+								<p>
+									Больше не нужно просить программистов делать ежедневные выгрузку или писать модули интеграции с CRM. Нужно всего лишь установить готовый скрипт на сайт.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</section>
+		
+		<section class="content block-4" id="block4">
+			<div class="container">
 				<div class="row">
-					<div class="col-xs-12 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
-						<div class="text-center text-bordered">
-							<p class="text-center">Наши тренировки это то, что вам действительно нужно. У нас нет деления на пол, расы и вероисповедания. Мы все одна семья и будем 
-рады тренироваться с вами плечом к плечу!</p>
-							<a href="#this" class="btn btn-success smooth">Записаться</a>
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<h2 class="text-center my-title-main-2">
+							Тарифы
+						</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-4 col-sm-4">
+						<div class="my-prices main text-center">
+							<p>без ограничения срока</p>
+							<p>0<span>р.</span></p>
+							<p>
+								Рассчитана на 5 операторов, 
+								действует бессрочно и ограничена 
+								по возможностям
+							</p>
+							<a href="#" class="btn btn-danger">Подключиться</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-8 col-sm-8 my-prices-right">
+						<div class="row">
+							<div class="col-xs-12 col-md-12 col-sm-12">
+								<p class="subtitle">Профессиональная версия включает важные возможности для увеличения продаж – например, активные приглашения. Попробуйте бесплатно в течение 14-дневного демо-периода!</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 col-md-3 col-sm-3">
+								<div class="my-prices-2 text-center">
+									<p>474<span>р.</span></p>
+									<p>За оператора 
+в месяц при  оплате за 1 год</p>
+									
+									<a href="#" class="btn btn-default">начать работу</a>
+								</div>
+							</div>
+							<div class="col-xs-12 col-md-3 col-sm-3">
+								<div class="my-prices-2 text-center">
+									<p>474<span>р.</span></p>
+									<p>за оператора 
+в месяц при оплате
+за 6 месяцев</p>
+									
+									<a href="#" class="btn btn-default">начать работу</a>
+								</div>
+							</div>
+							<div class="col-xs-12 col-md-3 col-sm-3">
+								<div class="my-prices-2 text-center">
+									<p>474<span>р.</span></p>
+									<p>за оператора 
+в месяц при оплате
+ за 3 месяца</p>
+									
+									<a href="#" class="btn btn-default">начать работу</a>
+								</div>
+							</div>
+							<div class="col-xs-12 col-md-3 col-sm-3">
+								<div class="my-prices-2 text-center">
+									<p>474<span>р.</span></p>
+									<p>за оператора 
+в месяц при оплате 
+за 1 месяц</p>
+									
+									<a href="#" class="btn btn-default">начать работу</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="content block-5">
+		
+		<section class="content block-5" id="block5">
 			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-md-12 col-sm-12">
-						<h2 class="text-center text-uppercase">
-							ВАС БУДЕТ ТРЕНИРОВАТЬ
-						</h2>
-					</div>
-				</div>
 				<div class="row">
 					<div class="col-xs-12 col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
-						<ul>
-							<li>
-								Мастер Спорта по Тайскому боксу,
-							</li>
-							<li>
-								Мастер Спорта по Боевому самбо, 
-							</li>
-							<li>
-								Чемпион Европы по рукопашному бою,
-							</li>
-							<li>
-								Чемпион России по рукопашному бою, 
-							</li>
-							<li>
-								Победитель Первенства России по ММА,
-							</li>
-							<li>
-								Чемпион России по Боевому Самбо
-							</li>
-						</ul>
+						<nav>
+							<ul>
+								<li><a href="#" class="active" data-choice="tab-1">1</a></li>
+								<li><a href="#" data-choice="tab-2">1</a></li>
+								<li><a href="#" data-choice="tab-3">1</a></li>
+								<li><a href="#" data-choice="tab-4">1</a></li>
+								<li><a href="#" data-choice="tab-5">1</a></li>
+								<li><a href="#" data-choice="tab-6">1</a></li>
+								<li><a href="#" data-choice="tab-7">1</a></li>
+							</ul>
+						</nav>
 					</div>
 				</div>
 			</div>
 		</section>
 		
-		<section class="content block-2">
-			<div class="container">
+		<section class="content block-6" id="block5">
+			<div class="container tab active" id="tab-1">
 				<div class="row">
 					<div class="col-xs-12 col-md-12 col-sm-12">
-						<h2 class="text-center text-uppercase text-red">
-							АКЦИЯ!
+						<h2 class="text-center my-title-main-2">
+							Отзывы
 						</h2>
-						<h3 class="text-center text-uppercase text-red">
-							РАСПРОДАЖА АБОНЕМЕНТОВ!
-						</h3>
-						<p class="text-center subtitle">
-							Запишись на тренировки по специальной цене:
-						</p>
 					</div>
+				</div>
+				<div class="row">
 					<div class="col-xs-12 col-md-12 col-sm-12">
-						<p class="text-center text-bordered">
-							Абонемент на 3 месяца всего за <strike>500р</strike> <strong>250р</strong> за тренировку!
-						</p>
-					</div>
-					<div class="col-xs-12 col-md-12 col-sm-12">
-						<p class="text-center text-bordered">
-							Абонемент на 3 месяца всего за <strike>500р</strike>  <strong>250р</strong>  за тренировку!
-						</p>
-					</div>
-					<div class="col-xs-12 col-md-12 col-sm-12">
-						<p class="text-center text-bordered">
-							Абонемент на 3 месяца всего за <strike>500р</strike>  <strong>250р</strong>  за тренировку!
-						</p>
-					</div>
-					<div class="col-xs-12 col-md-12 col-sm-12">
-						<p class="text-center text-title-timer">
-							Спешите записаться - количество мест ограничено!
-						</p>
-					</div>
-					<div class="col-xs-12 col-md-12 col-sm-12">
-						<p class="text-center title-danger">
-							до конца акции:
-						</p>
-					</div>
-					<div class="col-xs-12 col-md-12 col-sm-12">
-						<div class="timer">
-						</div>
-					</div>
-					<div class="col-xs-12 col-md-12 col-sm-12">
-						<p class="text-center call-title">
-							Звоните прямо сейчас 
-						</p>
-					</div>
-					<div class="col-xs-12 col-md-12 col-sm-12">
-						<p class="text-center phone">
-							8 (499) 649-58-67 
-						</p>
-					</div>
-					<div class="col-xs-12 col-md-12 col-sm-12">
-						<p class="text-center phone-subtitle">
-							или оставьте заявку и мы вам перезвоним
-						</p>
-					</div>
-					<div class="col-xs-12 col-md-12 col-sm-12">
-						<div class="text-center">
-							<a href="#this" class="btn btn-success smooth">Записаться</a>
+						<div class="" data-item="slider-item">
+							<div class="item">
+								<div class="row">
+									<div class="col-xs-12 col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+										<div class="row">
+											<div class="col-xs-12 col-md-4 col-sm-4">
+												<div class="left-side">
+													<img src="assets/img/review-img.jpg">
+													<p class="who">Сократ Папунидис</p>
+													<p class="whare">
+														Руководитель отдела IT ADOBE
+													</p>
+												</div>
+											</div>
+											<div class="col-xs-12 col-md-8 col-sm-8">
+												<div class="text">
+													<p>
+													Работаем с компанией с 2012 года, это отличный инструмент продаж, сервис постоянно дорабатывается и обновляется. На рынке пока лучше не встречали. Спасибо команде за предоставленные услуги!
+													</p>
+													<p>
+														Платная версия дает хорошее количество заказов. Для пробы есть отличная бесплатная версия.
+
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="row">
+									<div class="col-xs-12 col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+										<div class="row">
+											<div class="col-xs-12 col-md-4 col-sm-4">
+												<div class="left-side">
+													<img src="assets/img/review-img.jpg">
+													<p class="who">Сократ Папунидис</p>
+													<p class="whare">
+														Руководитель отдела IT ADOBE
+													</p>
+												</div>
+											</div>
+											<div class="col-xs-12 col-md-8 col-sm-8">
+												<div class="text">
+													<p>
+													Работаем с компанией с 2012 года, это отличный инструмент продаж, сервис постоянно дорабатывается и обновляется. На рынке пока лучше не встречали. Спасибо команде за предоставленные услуги!
+													</p>
+													<p>
+														Платная версия дает хорошее количество заказов. Для пробы есть отличная бесплатная версия.
+
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="container tab" id="tab-2">
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<h2 class="text-center my-title-main-2">
+							Отзывы
+						</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<div class="" data-item="slider-item">
+							<div class="item">
+								<div class="row">
+									<div class="col-xs-12 col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+										<div class="row">
+											<div class="col-xs-12 col-md-4 col-sm-4">
+												<div class="left-side">
+													<img src="assets/img/review-img.jpg">
+													<p class="who">Сократ Папунидис</p>
+													<p class="whare">
+														Руководитель отдела IT ADOBE
+													</p>
+												</div>
+											</div>
+											<div class="col-xs-12 col-md-8 col-sm-8">
+												<div class="text">
+													<p>
+													Работаем с компанией с 2012 года, это отличный инструмент продаж, сервис постоянно дорабатывается и обновляется. На рынке пока лучше не встречали. Спасибо команде за предоставленные услуги!
+													</p>
+													<p>
+														Платная версия дает хорошее количество заказов. Для пробы есть отличная бесплатная версия.
+
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="row">
+									<div class="col-xs-12 col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+										<div class="row">
+											<div class="col-xs-12 col-md-4 col-sm-4">
+												<div class="left-side">
+													<img src="assets/img/review-img.jpg">
+													<p class="who">Сократ Папунидис</p>
+													<p class="whare">
+														Руководитель отдела IT ADOBE
+													</p>
+												</div>
+											</div>
+											<div class="col-xs-12 col-md-8 col-sm-8">
+												<div class="text">
+													<p>
+													Работаем с компанией с 2012 года, это отличный инструмент продаж, сервис постоянно дорабатывается и обновляется. На рынке пока лучше не встречали. Спасибо команде за предоставленные услуги!
+													</p>
+													<p>
+														Платная версия дает хорошее количество заказов. Для пробы есть отличная бесплатная версия.
+
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container tab" id="tab-3">
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<h2 class="text-center my-title-main-2">
+							Отзывы
+						</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<div class="" data-item="slider-item">
+							<div class="item">
+								<div class="row">
+									<div class="col-xs-12 col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+										<div class="row">
+											<div class="col-xs-12 col-md-4 col-sm-4">
+												<div class="left-side">
+													<img src="assets/img/review-img.jpg">
+													<p class="who">Сократ Папунидис</p>
+													<p class="whare">
+														Руководитель отдела IT ADOBE
+													</p>
+												</div>
+											</div>
+											<div class="col-xs-12 col-md-8 col-sm-8">
+												<div class="text">
+													<p>
+													Работаем с компанией с 2012 года, это отличный инструмент продаж, сервис постоянно дорабатывается и обновляется. На рынке пока лучше не встречали. Спасибо команде за предоставленные услуги!
+													</p>
+													<p>
+														Платная версия дает хорошее количество заказов. Для пробы есть отличная бесплатная версия.
+
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="row">
+									<div class="col-xs-12 col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+										<div class="row">
+											<div class="col-xs-12 col-md-4 col-sm-4">
+												<div class="left-side">
+													<img src="assets/img/review-img.jpg">
+													<p class="who">Сократ Папунидис</p>
+													<p class="whare">
+														Руководитель отдела IT ADOBE
+													</p>
+												</div>
+											</div>
+											<div class="col-xs-12 col-md-8 col-sm-8">
+												<div class="text">
+													<p>
+													Работаем с компанией с 2012 года, это отличный инструмент продаж, сервис постоянно дорабатывается и обновляется. На рынке пока лучше не встречали. Спасибо команде за предоставленные услуги!
+													</p>
+													<p>
+														Платная версия дает хорошее количество заказов. Для пробы есть отличная бесплатная версия.
+
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container tab" id="tab-4">
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<h2 class="text-center my-title-main-2">
+							Отзывы
+						</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<div class="" data-item="slider-item">
+							<div class="item">
+								<div class="row">
+									<div class="col-xs-12 col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+										<div class="row">
+											<div class="col-xs-12 col-md-4 col-sm-4">
+												<div class="left-side">
+													<img src="assets/img/review-img.jpg">
+													<p class="who">Сократ Папунидис</p>
+													<p class="whare">
+														Руководитель отдела IT ADOBE
+													</p>
+												</div>
+											</div>
+											<div class="col-xs-12 col-md-8 col-sm-8">
+												<div class="text">
+													<p>
+													Работаем с компанией с 2012 года, это отличный инструмент продаж, сервис постоянно дорабатывается и обновляется. На рынке пока лучше не встречали. Спасибо команде за предоставленные услуги!
+													</p>
+													<p>
+														Платная версия дает хорошее количество заказов. Для пробы есть отличная бесплатная версия.
+
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="row">
+									<div class="col-xs-12 col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+										<div class="row">
+											<div class="col-xs-12 col-md-4 col-sm-4">
+												<div class="left-side">
+													<img src="assets/img/review-img.jpg">
+													<p class="who">Сократ Папунидис</p>
+													<p class="whare">
+														Руководитель отдела IT ADOBE
+													</p>
+												</div>
+											</div>
+											<div class="col-xs-12 col-md-8 col-sm-8">
+												<div class="text">
+													<p>
+													Работаем с компанией с 2012 года, это отличный инструмент продаж, сервис постоянно дорабатывается и обновляется. На рынке пока лучше не встречали. Спасибо команде за предоставленные услуги!
+													</p>
+													<p>
+														Платная версия дает хорошее количество заказов. Для пробы есть отличная бесплатная версия.
+
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container tab" id="tab-5">
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<h2 class="text-center my-title-main-2">
+							Отзывы
+						</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<div class="" data-item="slider-item">
+							<div class="item">
+								<div class="row">
+									<div class="col-xs-12 col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+										<div class="row">
+											<div class="col-xs-12 col-md-4 col-sm-4">
+												<div class="left-side">
+													<img src="assets/img/review-img.jpg">
+													<p class="who">Сократ Папунидис</p>
+													<p class="whare">
+														Руководитель отдела IT ADOBE
+													</p>
+												</div>
+											</div>
+											<div class="col-xs-12 col-md-8 col-sm-8">
+												<div class="text">
+													<p>
+													Работаем с компанией с 2012 года, это отличный инструмент продаж, сервис постоянно дорабатывается и обновляется. На рынке пока лучше не встречали. Спасибо команде за предоставленные услуги!
+													</p>
+													<p>
+														Платная версия дает хорошее количество заказов. Для пробы есть отличная бесплатная версия.
+
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="row">
+									<div class="col-xs-12 col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+										<div class="row">
+											<div class="col-xs-12 col-md-4 col-sm-4">
+												<div class="left-side">
+													<img src="assets/img/review-img.jpg">
+													<p class="who">Сократ Папунидис</p>
+													<p class="whare">
+														Руководитель отдела IT ADOBE
+													</p>
+												</div>
+											</div>
+											<div class="col-xs-12 col-md-8 col-sm-8">
+												<div class="text">
+													<p>
+													Работаем с компанией с 2012 года, это отличный инструмент продаж, сервис постоянно дорабатывается и обновляется. На рынке пока лучше не встречали. Спасибо команде за предоставленные услуги!
+													</p>
+													<p>
+														Платная версия дает хорошее количество заказов. Для пробы есть отличная бесплатная версия.
+
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container tab" id="tab-6">
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<h2 class="text-center my-title-main-2">
+							Отзывы
+						</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<div class="" data-item="slider-item">
+							<div class="item">
+								<div class="row">
+									<div class="col-xs-12 col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+										<div class="row">
+											<div class="col-xs-12 col-md-4 col-sm-4">
+												<div class="left-side">
+													<img src="assets/img/review-img.jpg">
+													<p class="who">Сократ Папунидис</p>
+													<p class="whare">
+														Руководитель отдела IT ADOBE
+													</p>
+												</div>
+											</div>
+											<div class="col-xs-12 col-md-8 col-sm-8">
+												<div class="text">
+													<p>
+													Работаем с компанией с 2012 года, это отличный инструмент продаж, сервис постоянно дорабатывается и обновляется. На рынке пока лучше не встречали. Спасибо команде за предоставленные услуги!
+													</p>
+													<p>
+														Платная версия дает хорошее количество заказов. Для пробы есть отличная бесплатная версия.
+
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="row">
+									<div class="col-xs-12 col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+										<div class="row">
+											<div class="col-xs-12 col-md-4 col-sm-4">
+												<div class="left-side">
+													<img src="assets/img/review-img.jpg">
+													<p class="who">Сократ Папунидис</p>
+													<p class="whare">
+														Руководитель отдела IT ADOBE
+													</p>
+												</div>
+											</div>
+											<div class="col-xs-12 col-md-8 col-sm-8">
+												<div class="text">
+													<p>
+													Работаем с компанией с 2012 года, это отличный инструмент продаж, сервис постоянно дорабатывается и обновляется. На рынке пока лучше не встречали. Спасибо команде за предоставленные услуги!
+													</p>
+													<p>
+														Платная версия дает хорошее количество заказов. Для пробы есть отличная бесплатная версия.
+
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container tab" id="tab-7">
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<h2 class="text-center my-title-main-2">
+							Отзывы
+						</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<div class="" data-item="slider-item">
+							<div class="item">
+								<div class="row">
+									<div class="col-xs-12 col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+										<div class="row">
+											<div class="col-xs-12 col-md-4 col-sm-4">
+												<div class="left-side">
+													<img src="assets/img/review-img.jpg">
+													<p class="who">Сократ Папунидис</p>
+													<p class="whare">
+														Руководитель отдела IT ADOBE
+													</p>
+												</div>
+											</div>
+											<div class="col-xs-12 col-md-8 col-sm-8">
+												<div class="text">
+													<p>
+													Работаем с компанией с 2012 года, это отличный инструмент продаж, сервис постоянно дорабатывается и обновляется. На рынке пока лучше не встречали. Спасибо команде за предоставленные услуги!
+													</p>
+													<p>
+														Платная версия дает хорошее количество заказов. Для пробы есть отличная бесплатная версия.
+
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="row">
+									<div class="col-xs-12 col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+										<div class="row">
+											<div class="col-xs-12 col-md-4 col-sm-4">
+												<div class="left-side">
+													<img src="assets/img/review-img.jpg">
+													<p class="who">Сократ Папунидис</p>
+													<p class="whare">
+														Руководитель отдела IT ADOBE
+													</p>
+												</div>
+											</div>
+											<div class="col-xs-12 col-md-8 col-sm-8">
+												<div class="text">
+													<p>
+													Работаем с компанией с 2012 года, это отличный инструмент продаж, сервис постоянно дорабатывается и обновляется. На рынке пока лучше не встречали. Спасибо команде за предоставленные услуги!
+													</p>
+													<p>
+														Платная версия дает хорошее количество заказов. Для пробы есть отличная бесплатная версия.
+
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
 		</section>
 		
-			
 		<section class="content block-7">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-md-12 col-sm-12">
-						<h2 class="text-center text-uppercase">
-							ТРЕНИРОВКИ ПО БОКСУ
+						<h2 class="text-center my-title-main-2">
+							Получите это прямо сейчас!
 						</h2>
-						<h4 class="text-center" id="this">с многократным чемпионом России и Европы</h4>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-xs-12 col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+					<div class="col-xs-12 col-md-12 col-sm-12">
+						<p class="text-center subtitle">
+							Достаточно оставить Ваш e-mail и мы предоставим доступ, и поможем настроить работу.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12">
 						<form class="form-send" data-toggle="validator" action="hendler.php" method="post" role="form" data-form="send">
-							<div class="row">
-								<div class="col-xs-12 col-md-12 col-sm-12">
-									<p class="form-title">ОСТАВЬТЕ ЗАЯВКУ</p>
-									<p class="form-subtitle">на <i>бесплатную</i> тренировку прямо сейчас</p>
-								</div>
-							</div>
 							<div class="form-group">
 								<div class="row">
-									<div class="col-xs-12">
-										<input type="text" name="user" class="form-control my-input user" placeholder="Введите ваше имя" required/>
+									<div class="col-xs-12 col-md-8 col-sm-8 col-sm-offset-2 col-md-offset-2">
+										<div class="input-group">
+											<input type="text" name="user" class="form-control my-input user" placeholder="Введите ваше имя" required/>
+											<span class="input-group-btn">
+												<button type="submit" class="btn btn-success my-btn-second" value="block-1" name="from">Оставить заявку</button>
+											</span>
+										</div>
 									</div>
 									<div class="col-xs-12">
 										<div class="help-block with-errors"></div>
-									</div>
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="row">
-									<div class="col-xs-12">
-										<input type="text" data-mask="phone" name="phone" class="form-control my-input phone" placeholder="Введите телефон" required/>
-									</div>
-									<div class="col-xs-12">
-										<div class="help-block with-errors"></div>
-									</div>
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="row">
-									<div class="col-xs-12">
-										<button type="submit" class="btn btn-success my-btn-second" value="block-1" name="from">Оставить заявку</button>
 									</div>
 								</div>
 							</div>
@@ -451,42 +977,107 @@
 				</div>
 			</div>
 		</section>
+		
 	</div>
 	
 	<section class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 col-md-5 col-sm-5">
-					<div class="logo">
-						<div><img src="assets/img/p1-2.png"></div>
-						<div>
-							<p>Tornado box</p>
-							<p>Школа бокса №1 в Москве</p>
+		<div class="footer-lvl-1">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-4 col-sm-4">
+						<div class="logo">
+							<a class="smooth" href="#block1"><img src="assets/img/logo-white.png"></a>
+						</div>
+						<div class="contacts">
+							<p><a href="tel:8 (800) 333 66 28">8 (800) 333 66 28</a></p>
+							<p><a href="mailto:Onleads@gmail.com">Onleads@gmail.com</a></p>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-8 col-sm-8">
+						<div class="row">
+							<div class="col-xs-12 col-md-3 col-sm-3">
+								<ul>
+									<li>
+										<p>Продукт</p>
+									</li>
+									<li>
+										<a href="#">Войти</a>
+									</li>
+									<li>
+										<a href="#">Возможности</a>
+									</li>
+									<li>
+										<a href="#">API</a>
+									</li>
+									<li>
+										<a href="#">Тарифы</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-xs-12 col-md-3 col-sm-3">
+								<ul>
+									<li>
+										<p>КОмпания</p>
+									</li>
+									<li>
+										<a href="#">О компании</a>
+									</li>
+									<li>
+										<a href="#">Партнерам</a>
+									</li>
+									<li>
+										<a href="#">Договор</a>
+									</li>
+									<li>
+										<a href="#">Контакты</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-xs-12 col-md-3 col-sm-3">
+								<ul>
+									<li>
+										<p>Поддержка</p>
+									</li>
+									<li>
+										<a href="#">Настройка</a>
+									</li>
+									<li>
+										<a href="#">Техподдержка</a>
+									</li>
+									<li>
+										<a href="#">Инструкции</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-xs-12 col-md-3 col-sm-3">
+								<ul>
+									<li>
+										<p>Мы в соц сетях</p>
+									</li>
+									<li>
+										<a href="#">Вконтакте</a>
+									</li>
+									<li>
+										<a href="#">Facebook</a>
+									</li>
+									<li>
+										<a href="#">Google+</a>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-xs-12 col-md-4 col-sm-4">
-					<div class="address">
-						<div>
-							<img src="assets/img/yandexmaps-349-l-124x124.png">
-						</div>
-						<div>
-							<p>
-								Москва,
-							</p>
-							<p>
-								ул. 1-я, Мытищинская д. 23
-							</p>
-							<p>
-								м. Алексеевская
-							</p>
-						</div>
+			</div>
+		</div>
+		<div class="footer-lvl-2">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-4 col-sm-4">
+						<p>&copy; 2015 Onleads. Все права защищены</p>
 					</div>
-				</div>
-				<div class="col-xs-12 col-md-3 col-sm-3">
-					<div class="call-block">
-						<p>8 (499) 649-58-67</p>
-						<a href="#" class="btn btn-success" data-target="#call" data-toggle="modal">Обратный звонок</a>
+					<div class="col-xs-12 col-md-8 col-sm-8">
+						<p class="text-right"><a href="#">Политика конфиденциальности</a></p>
 					</div>
 				</div>
 			</div>

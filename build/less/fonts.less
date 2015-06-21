@@ -1,49 +1,68 @@
 // fonts
 @font-face {
-	font-family: 'Open Sans';
-	src: local('Open Sans Light'),
-	url('../fonts/opensans-light.ttf') format('truetype');
+	font-family: 'MS';
+	src: local('MuseoSansCyrl'),
+	url('../fonts/exljbris - MuseoSansCyrl-100.otf') format('truetype');
+	font-weight:100;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'MS';
+	src: local('MuseoSansCyrl'),
+	url('../fonts/exljbris - MuseoSansCyrl-300.otf') format('truetype');
 	font-weight:300;
 	font-style: normal;
 }
 @font-face {
-	font-family: 'PFL';
-	src: local('PFL'),
-	url('../fonts/pfsquaresanspro-light.ttf') format('truetype');
-	font-weight:300;
+	font-family: 'MS';
+	src: local('MuseoSansCyrl'),
+	url('../fonts/exljbris - MuseoSansCyrl-500.otf') format('truetype');
+	font-weight:500;
 	font-style: normal;
 }
 @font-face {
-	font-family: 'PFR';
-	src: local('PFR'),
-	url('../fonts/pfsquaresanspro-regular.ttf') format('truetype');
-	font-weight:400;
+	font-family: 'MS';
+	src: local('MuseoSansCyrl'),
+	url('../fonts/exljbris - MuseoSansCyrl-700.otf') format('truetype');
+	font-weight:700;
 	font-style: normal;
 }
 @font-face {
-	font-family: 'PFB';
-	src: local('PFB'),
-	url('../fonts/pfsquaresanspro-xblack.ttf') format('truetype');
+	font-family: 'MS';
+	src: local('MuseoSansCyrl'),
+	url('../fonts/exljbris - MuseoSansCyrl-900.otf') format('truetype');
 	font-weight:900;
 	font-style: normal;
 }
-.op {
-	font-family: 'Open Sans', sans-serif;
+
+.MST {
+	font-family: 'MS', sans-serif;
+	font-weight: 100;
+	font-style: normal;
+}
+.MSL {
+	font-family: 'MS', sans-serif;
 	font-weight: 300;
 	font-style: normal;
 }
-.PFL {
-	font-family: 'PFL', sans-serif;
-	font-weight: 300;
+.MSR {
+	font-family: 'MS', sans-serif;
+	font-weight: 500;
 	font-style: normal;
 }
-.PFR {
-	font-family: 'PFR', sans-serif;
-	font-weight: 400;
+.MSB {
+	font-family: 'MS', sans-serif;
+	font-weight: 700;
 	font-style: normal;
 }
-.PFB {
-	font-family: 'PFB', sans-serif;
+.MSX {
+	font-family: 'MS', sans-serif;
 	font-weight: 900;
 	font-style: normal;
+}
+
+body {
+	p {
+		.MSR;
+	}
 }

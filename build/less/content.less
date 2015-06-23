@@ -7,6 +7,7 @@
 	.form-group.has-error {
 		input {
 			background: #B26D6C;
+			color: #fff !important;
 		}
 	}
 	&.block-1 {
@@ -414,14 +415,33 @@
 				display: flex;
 				justify-content: space-around;
 				li {
-					a {
+					position: relative;
+					
+					&:before {
+						content: '';
+						left: 0;
+						top: 0;
+						bottom: 0;
+						right: 0;
+						position: absolute;
+					}
+					div {
 						color: #fff;
 						padding: 30px 20px;
 						display: inline-block;
-						position: relative;
 						-webkit-user-select: none;
 						&:hover,&:focus {
 							text-decoration: none;
+						}
+						&:before {
+							content: '';
+							position: absolute;
+							bottom: 0;
+							top: 0;
+							left: 0;
+							right: 0;
+							z-index: 99999;
+							cursor: pointer;
 						}
 						&:after {
 							content: '';
@@ -434,16 +454,16 @@
 							left: 50%;
 							margin-left: -15px;
 						}
-						&.active {
-							&:after {
-								border-bottom: 15px solid #f3f3f6;
-							}
-						}
 						img {
 							width: 100%;
 						}
+						
 					}
-					
+					&.active {
+						div:after {
+							border-bottom: 15px solid #f3f3f6;
+						}
+					}
 				}
 			}
 		}

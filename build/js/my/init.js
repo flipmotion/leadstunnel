@@ -1,11 +1,23 @@
 $(document).ready(function() {
+	$('.anim-el').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+		if (isInView) {
+			// element is now visible in the viewport
+		$(this).addClass('in-view');
+		$('.content.block-1 .holder-img').addClass('anim');
+		} else {
+			$(this).removeClass('in-view');
+			$('.content.block-1 .holder-img').removeClass('anim');
+		}
+	});
 	$("body").scrollspy({target: "#menu", offset:200});
+	
 	$('a.smooth').click(function(){
 		$('html, body').animate({
 			scrollTop: $( $.attr(this, 'href') ).offset().top - 200
 		}, 500);
 		return false;
 	});
+	
 	$('[data-item="disable-slider"]').click(function(){
 		$('.turn-on').toggleClass('active');
 		$('.turn-off').toggleClass('active');
@@ -32,27 +44,28 @@ $(document).ready(function() {
 	$('[data-form="send"]').ajaxForm(function() {
 		$('#call').modal('hide');
 		$('#thx').modal('show');
+		$('[data-form="send"]')[0].reset();
 	});
 	
-	$('.block-5 a').click(function(e){
-		e.preventDefault();
-		var that = $(this).attr('data-choice');
-		$('.block-5 a').removeClass('active');
-		$('.block-6 .container').removeClass('active');
-		$(this).addClass('active');
-		$("#"+that).addClass('active');
-		
-	});
+	
 	var title = $('.block-1 .offset');
 	var win = $(window).height() / 2.5;
 	title.css('margin-top', win);
-	
+	var scroll_r = $(this).scrollTop();
+	//var parallaxDown2 = $('.content.block-2 .overflow');
+	//parallaxDown2.css('bottom',-scroll_r);
 	$(window).scroll(function () {
 		var scroll_r = $(this).scrollTop();
-		var parallaxDown = $('body .block-1 .holder-img');
-		var options = ((((jQuery(window).height() - scroll_r) - jQuery(window).height()) / 1000) + 1) < 0.3 ? 0.3 : ((((jQuery(window).height() - scroll_r) - jQuery(window).height()) / 1000) + 1);
-		parallaxDown.css('bottom', options);
-		 menuTop();
+		//var parallaxDown = $('.content.block-1 .holder-img');
+		//var parallaxDown2 = $('.content.block-2 .overflow');
+		//var options = ((((jQuery(window).height() - scroll_r) - jQuery(window).height()) / 1000) + 1) < 0.3 ? 0.3 : ((((jQuery(window).height() - scroll_r) - jQuery(window).height()) / 1000) + 1);
+		//parallaxDown.css('bottom', options);
+		//parallaxDown.css('bottom' , -scroll_r);
+		
+		menuTop();
+		//if(scroll_r <= 792){
+		//	parallaxDown2.css('bottom',-scroll_r);
+		//}
 	});
 });
 function menuTop(){

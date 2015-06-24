@@ -15,7 +15,7 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 </head>
-<body data-spy="scroll" data-target="#menu">
+<body >
 	<div class="sticky-page">
 		
 		<section class="header navbar-fixed-top">
@@ -44,14 +44,14 @@
 
 								<!-- Collect the nav links, forms, and other content for toggling -->
 								<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-									<div data-spy="scroll" id="menu">
+									<div  id="menu">
 										<ul class="nav navbar-nav">
-											<li>
+											<li class="active">
 												<div class="circle"></div>
 												<a class="smooth" href="#block1">Leadstunnel</a>
 											</li>
 											
-											<li class="active">
+											<li>
 												<div class="circle"></div>
 												<a class="smooth" href="#block2">Как это работает</a>
 											</li>
@@ -97,7 +97,7 @@
 				</div>
 					<div class="row">
 					<div class="col-xs-12 col-md-12 col-sm-12">
-						<form class="form-send" action="hendler.php" data-toggle="validator" method="post" role="form" data-form="send">
+						<form class="form-send" data-delay="999999999" action="hendler.php" method="post" role="form" data-form="send">
 							<div class="form-group">
 								<div class="row">
 									<div class="col-xs-12 col-md-8 col-sm-8 col-sm-offset-2 col-md-offset-2">
@@ -327,8 +327,8 @@
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-12">
 						<div class="text-right show-all">
-							<div class="disable-slider" data-item="disable-slider"> <p>Больше <br />
-возмжностей</p></div>
+							<div class="disable-slider" data-item="disable-slider"> <p class="more">Больше <br />
+возмжностей</p><p class="close-more">скрыть</p></div>
 						</div>
 					</div>
 				</div>
@@ -737,7 +737,7 @@
 				</div>
 				<div class="row">
 					<div class="col-xs-12 col-md-12 col-sm-12">
-						<form class="form-send" data-toggle="validator" data-delay="99999999999999" action="hendler.php" method="post" role="form" data-form="send">
+						<form class="form-send" data-delay="999999999" action="hendler.php" method="post" role="form" data-form="send">
 							<div class="form-group">
 								<div class="row">
 									<div class="col-xs-12 col-md-8 col-sm-8 col-sm-offset-2 col-md-offset-2">
@@ -787,11 +787,11 @@
 										<a href="#">Войти</a>
 									</li>
 									<li>
-										<a href="#">Возможности</a>
+										<a href="#block3" class="smooth">Возможности</a>
 									</li>
 									
 									<li>
-										<a href="#">Тарифы</a>
+										<a href="#block4" class="smooth">Тарифы</a>
 									</li>
 								</ul>
 							</div>
@@ -857,11 +857,11 @@
 				<h3>
 					на бесплатную консультацию
 				</h3>
-				<form class="form-send" data-toggle="validator" data-delay="99999999999999" action="hendler.php" method="post" role="form" data-form="send">
+				<form class="form-send" data-delay="999999999" action="hendler.php" method="post" role="form" data-form="send">
 					<div class="form-group">
 						<div class="row">
 							<div class="col-xs-12">
-								<input type="email" name="user" class="form-control my-input user" placeholder="Введите ваш email" data-error="Введите корректный e-mail" required/>
+								<input type="email" name="mail" class="form-control my-input user" placeholder="Введите ваш email" data-error="Введите корректный e-mail" required/>
 							</div>
 							<div class="col-xs-12">
 								<div class="help-block with-errors"></div>
@@ -901,7 +901,7 @@
 			<div class="modal-body">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 				<div class="embed-responsive embed-responsive-16by9">
-					<iframe class="embed-responsive-item" src="//www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen=""></iframe>
+					
 				</div>
 			</div>
 		</div>
@@ -944,7 +944,7 @@
 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/js/SmoothScroll.js"></script>
 	<!--<script type="text/javascript" src="assets/js/typeahead.js"></script>-->
-	<script type="text/javascript" src="assets/js/main.js"></script>
+	<script type="text/javascript" src="assets/js/main.min.js"></script>
 	
 <!--подключаем бс3.2!-->
 
